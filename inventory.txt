@@ -1,0 +1,7 @@
+[app_servers]
+ubtarget5 ansible_host=ubtarget5  ansible_ssh_pass=asd123
+ubtarget6 ansible_host=ubtarget6  ansible_ssh_pass=asd123
+[db_servers]
+ubtarget7 ansible_host=ubtarget7  ansible_ssh_pass=asd123
+[lb_servers]
+ubtarget8 ansible_host=ubtarget8  ansible_ssh_pass=asd123

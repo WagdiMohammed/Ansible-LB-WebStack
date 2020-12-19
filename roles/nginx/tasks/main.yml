@@ -1,0 +1,15 @@
+- name: Install NGINX 
+  apt:  
+    name: ['nginx']
+    state: present 
+
+- name: Copy nginx.conf
+  copy: src=templates/nginx.conf  dest=/etc/nginx/
+
+
+
+- name: start nginx service
+  service:
+    name: nginx
+    state:  started
+    enabled:  yes

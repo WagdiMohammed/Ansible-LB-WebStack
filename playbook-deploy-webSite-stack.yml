@@ -1,0 +1,16 @@
+- name: Deploy a web application
+  hosts: db_servers
+  roles:
+    - python
+    - mysql_db
+
+- name: Deploy a web application
+  hosts: app_servers
+  roles:
+    - python
+    - flask_web
+
+- name: Deploy a web application
+  hosts: lb_servers
+  roles:
+    - nginx
